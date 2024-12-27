@@ -13,20 +13,17 @@ INSURANCE-DATA-ANALYSIS-WORKFLOW/
 ├── .dvc/ 
 ├── .github/
 ├── .week3/
-│ └── # Virtual environment
 ├── . Data/
-│ └── # Directory for raw data files (CSV or txt)
 ├── . notebooks/
-│   ├── insurance_analysis.ipynb  # Notebook for insurance data analysis
-│   └── README.md  # Notebook-specific documentation  
-├── . scripts/ # Additional source code or reusable modules 
+│   ├── insurance_analysis.ipynb  
+│   └── README.md 
+├── . scripts/ 
 ├── . src/
 ├── .tests/
-│   └── # Unit and integration tests 
 ├── . .dvcignore 
-├── .gitignore # Specifies files to be ignored by Git  
-├── README.md # Project overview and instructions
-└── requirements.txt # List of Python dependencies
+├── .gitignore 
+├── README.md 
+└── requirements.txt 
 
 ## Deliverables
 - Python environment setup.
