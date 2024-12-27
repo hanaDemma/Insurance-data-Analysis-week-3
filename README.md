@@ -7,6 +7,26 @@ This project aims to analyze historical insurance claim data to optimize marketi
 
 ## Setup Environment
 The first step is to set up a Python development environment with version control and implement CI/CD workflows for continuous integration and deployment.
+## Folder Structure 
+
+INSURANCE-DATA-ANALYSIS-WORKFLOW/ 
+├── .dvc/ 
+├── .github/
+├── .week3/
+│ └── # Virtual environment
+├── . Data/
+│ └── # Directory for raw data files (CSV or txt)
+├── . notebooks/
+│   ├── insurance_analysis.ipynb  # Notebook for insurance data analysis
+│   └── README.md  # Notebook-specific documentation  
+├── . scripts/ # Additional source code or reusable modules 
+├── . src/
+├── .tests/
+│   └── # Unit and integration tests 
+├── . .dvcignore 
+├── .gitignore # Specifies files to be ignored by Git  
+├── README.md # Project overview and instructions
+└── requirements.txt # List of Python dependencies
 
 ## Deliverables
 - Python environment setup.
