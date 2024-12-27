@@ -38,7 +38,7 @@ def replace_missing_values(data):
   """
 
   # Identify numeric and categorical columns
-  numeric_columns = data.select_dtypes(include=['int64','float64']).columns
+  numeric_columns = data.select_dtypes(include='number').columns
   categorical_columns = data.select_dtypes(include='object').columns
 
   # Replace missing values in numeric columns with the mean
@@ -54,21 +54,19 @@ def replace_missing_values(data):
   return data
 
 def histogramPlotForNumericalColumns(insurance_data):
-    # for column in insurance_data.select_dtypes(include='int64').columns:
-    for column in insurance_data.select_dtypes(include=['int64', 'float64']).columns:
-        # print(insurance_data[column].value_counts())
-        plt.figure(figsize=(8,6))
+    for column in insurance_data.select_dtypes(include='int64').columns:
+        print(insurance_data[column].value_counts())
+        plt.figure(figsize=(20,6))
         plt.hist(insurance_data[column], bins=30)
         plt.title(f"Histogram of {column}")
         plt.show()
 
 def barchartPlotForCategoricalColumns(insurance_data):
-    for column in insurance_data.columns:
-        if insurance_data[column].dtype.name == 'category':
-            # print(insurance_data[column].value_counts())
-            insurance_data[column].value_counts().plot(kind='bar',figsize=(20,6))
-            plt.title(f"Bar Chart of {column}")
-            plt.show()
+    for column in insurance_data.select_dtypes(include='object').columns:
+        print(insurance_data[column].value_counts())
+        insurance_data[column].value_counts().plot(kind='bar',figsize=(20,6))
+        plt.title(f"Bar Chart of {column}")
+        plt.show()
 
 
 def get_outlier_summary(data):
