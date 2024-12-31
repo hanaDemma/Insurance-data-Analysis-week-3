@@ -49,12 +49,31 @@ The goal is to perform Eda analysis to the given Datasets
 - Commit progress with clear messages.
 - Use pull requests (PR) to merge updates into the main branch.
 
+## A/B Hypothesis Testing
+## Objective
+- To Accept or reject the following Null Hypotheses: 
+
+## Statistical Modeling
+## Objective
+- to make predictions or draw conclusions 
+
+## Tasks
+- Create a new branch task-3 for this phase of development.
+- Commit progress with clear messages.
+- Use pull requests (PR) to merge updates into the main branch.
+
 ## Dependencies
 To ensure the project runs smoothly, the following libraries are required:
 - pandas
 - seaborn
 - scikit-learn
 - matplotlib
+- xgboost
+- mean_squared_error
+- r2_score
+- LinearRegression
+- DecisionTreeRegressor
+- RandomForestRegressor
 
 ## Contribution Guidelines
 - Fork the repository.
