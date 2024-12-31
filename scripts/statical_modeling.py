@@ -156,11 +156,11 @@ def train_linear_regression(X_train, y_train):
     model.fit(X_train, y_train)
     return model
 
-def train_decision_tree(X_train, y_train, max_depth=None):
+def train_decision_tree(X_train, y_train):
     """
     Trains a Decision Tree model.
     """
-    model = DecisionTreeRegressor(max_depth=max_depth, random_state=42)
+    model = DecisionTreeRegressor(max_depth=10, random_state=42)
     model.fit(X_train, y_train)
     return model
 
@@ -187,4 +187,5 @@ def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
+
     return mse, r2
