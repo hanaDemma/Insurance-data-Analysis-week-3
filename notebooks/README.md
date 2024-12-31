@@ -49,7 +49,7 @@ The objective of this phase is to install dvc and push to localstorage
 - Commit progress regularly with clear and detailed commit messages.
 - Merge updates into the main branch via a Pull Request (PR).
 
-# Task-3 ## A/B Hypothesis Testing
+# Task-3 A/B Hypothesis Testing
 - To accept or reject the null hypothesis by evaluating differences between two groups (A and B) using statistical methods.
 - Key Tasks:
  - Select Metrics:
@@ -76,7 +76,7 @@ The objective of this phase is to install dvc and push to localstorage
 - Merge updates into the main branch via a Pull Request (PR).
 
 
-# Task-4 ## Statistical Modeling
+# Task-4 Statistical Modeling
 - To identify patterns, relationships, and trends within datasets to enhance decision-making through effective statistical modeling.
  - Key tasks
       - Data Preparation
