@@ -21,3 +21,20 @@ def ABhypothesisTesting(insurance_data,feature,metric1,metric2,kpi):
     else:
         print("Fail to reject the null hypothesis: No significant difference between the groups.")
 
+
+def hypothesis_test_difference_between_columns(df, kpi_column, group_column):
+  
+    group_codes = df[group_column].unique()
+   
+    column_groups = [df[df[group_column] == group_code][kpi_column].dropna() for group_code in group_codes]
+
+    t_stat, p_value = stats.f_oneway(*column_groups)
+    print(f"T-statistic of {group_column}: {t_stat}")
+    print(f"P-value of {group_column}: {p_value}")
+     # Interpret the results
+    alpha = 0.05  
+    if p_value < alpha:
+        print("Reject the null hypothesis: There is a significant difference between the groups.")
+    else:
+        print("Fail to reject the null hypothesis: No significant difference between the groups.")
+
