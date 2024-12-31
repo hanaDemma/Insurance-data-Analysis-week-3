@@ -55,7 +55,7 @@ The goal is to perform Eda analysis to the given Datasets
 
 ## Statistical Modeling
 ## Objective
-- to make predictions or draw conclusions 
+- To make predictions or draw conclusions based on data.
 
 ## Tasks
 - Create a new branch task-3 for this phase of development.
